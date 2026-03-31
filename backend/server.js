@@ -25,6 +25,8 @@ app.use('/api/product',productRouter)
 app.use('/api/cart/',cartRouter)
 app.use('/api/order',orderRouter)
 
+app.use('/images', express.static('uploads'));
+
 app.get('/',(req,res)=>{
     res.send("API Working")
 })
